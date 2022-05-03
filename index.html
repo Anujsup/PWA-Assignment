@@ -3,6 +3,9 @@
     <title>Lifestyle Store</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <meta name="theme-color" content="#5f5eaa">
+      <link rel="apple-touch-icon" href="assets/logoicon-192x192.png">
+    <link rel="manifest" href="./manifest.json" />
 
     <!--jQuery library--> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -90,4 +93,16 @@
             </div>    
         </footer>
 </body>
+    <script>
+        if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('https://anujsup.github.io/PWA-Assignment/serviceworker.js')
+  .then((registration) => {
+  console.log("service worker registered")
+  })
+  .catch((err) => {
+  console.log("sw registraration "+ err)
+  });
+  } 
+
+    </script>
     </html>
